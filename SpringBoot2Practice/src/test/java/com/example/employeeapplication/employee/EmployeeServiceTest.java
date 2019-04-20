@@ -20,13 +20,13 @@ public class EmployeeServiceTest {
 	@Test
 	public void testOldestEmployee() {
 		
-		assertEquals("Raman", employeeService.getOldestEmployee().getFirstname());
+		assertEquals("Firstname001", employeeService.getOldestEmployee().getFirstname());
 	}
 	
 	@Test
 	public void  testYoungestEmployee() {
 		
-		assertEquals("Rahul", employeeService.getYoungestEmployee().getFirstname());
+		assertEquals("Firstname002", employeeService.getYoungestEmployee().getFirstname());
 	}
 
 }
