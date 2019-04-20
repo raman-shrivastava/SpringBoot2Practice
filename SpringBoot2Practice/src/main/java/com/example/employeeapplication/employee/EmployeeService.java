@@ -20,21 +20,19 @@ public class EmployeeService {
 	
 	public Employee getOldestEmployee() {
 		
-		Employee employee = repository.getEmployees()
+		return repository.getEmployees()
 				.stream()
 				.min(Comparator.comparing(Employee::getDateOfBirth))
 				.orElseThrow(NoSuchElementException::new);
 		
-		return employee;
 	}
 	
 	public Employee getYoungestEmployee() {
 		
-		Employee employee = repository.getEmployees()
+		return repository.getEmployees()
 				.stream()
 				.max(Comparator.comparing(Employee::getDateOfBirth))
 				.orElseThrow(NoSuchElementException::new);
 		
-		return employee;
 	}
 }

@@ -38,7 +38,7 @@ public class EmployeeApplication implements CommandLineRunner {
 		
 		logger.info("Loading test data to employee repository");
 		
-		List<Employee> employees = new ArrayList<Employee>();
+		List<Employee> employees = new ArrayList<>();
 		employees.add(new Employee("Firstname001", "Lastname001", "someboday001@abc.com", LocalDate.of(1985, 1, 1)));
 		employees.add(new Employee("Firstname002", "Lastname002", "someboday002@abc.com", LocalDate.of(1987, 1, 1)));
 		employees.add(new Employee("Firstname003", "Lastname003", "someboday003@abc.com", LocalDate.of(1977, 1, 1)));

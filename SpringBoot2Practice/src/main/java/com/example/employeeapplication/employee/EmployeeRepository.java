@@ -17,7 +17,7 @@ public class EmployeeRepository {
 	public static int loadEmployeeData(List<Employee> employees) {
 		
 		if (employeeList == null) {
-			employeeList = new ArrayList<Employee>();
+			employeeList = new ArrayList<>();
 		}
 		
 		if (employees != null) {

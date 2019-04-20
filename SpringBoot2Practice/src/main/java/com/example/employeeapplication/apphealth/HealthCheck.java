@@ -18,14 +18,16 @@ public class HealthCheck implements HealthIndicator {
 	
 	@Override
 	public Health health() {
-		// TODO Auto-generated method stub
+		
 		boolean employeeServiceHealth = (employeeService != null);
 		
-		boolean service1 = true, service2 = true, service3 = true;
+		boolean service1 = true;
+		boolean service2 = true; 
+		boolean service3 = true;
 		
 		boolean totalHealth = employeeServiceHealth && service1 && service2 && service3;
 		
-		Map<String, Object> details = new HashMap<String, Object>();
+		Map<String, Object> details = new HashMap<>();
 		details.put("EmployeeService", Boolean.valueOf(employeeServiceHealth));
 		details.put("Service1", Boolean.valueOf(service1));
 		details.put("Service2", Boolean.valueOf(service2));
